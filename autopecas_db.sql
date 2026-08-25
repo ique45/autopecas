@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
     senha VARCHAR(255) NOT NULL
 );
 
--- Usuário padrão: admin / senha: 123456 (MD5 temporário)
+-- Usuário padrão para teste local: admin / senha: 123456 (hash bcrypt via password_hash)
 INSERT INTO usuarios (usuario, senha) VALUES ('admin', '$2y$12$KEpapnczyU9S0XWrnGHyLu8XMCJfYZr6R.XwCuLJP7FdBYvZeUzVe');
 
 -- Tabela de Produtos (Autopeças)

@@ -12,6 +12,9 @@
                 <h1>AUTO PEÇAS</h1>
                 <p>do Baiano — Sistema de Gestão</p>
             </div>
+            <?php if (isset($_GET['erro'])): ?>
+                <div class="alert-erro">Usuário ou senha inválidos.</div>
+            <?php endif; ?>
             <form action="../controllers/AuthController.php?acao=login" method="POST">
                 <div class="form-group">
                     <label>Usuário</label>
